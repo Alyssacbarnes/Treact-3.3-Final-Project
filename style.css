@@ -20,6 +20,9 @@ a {
     display: inline;
     text-decoration: none;
 }
+.purple {
+color: #6415ff;
+}
 
 .row {
     width: 100%;
@@ -69,8 +72,8 @@ nav {
 .nav__logo--title {
     font-weight: 900;
     font-size: 24px;
-    margin: 20px 20px 20px 2px; 
-    padding-bottom: 0px;
+ margin-left: 12px; 
+    padding-bottom: 2px;
     letter-spacing: 0.6px;
 }
 
@@ -84,6 +87,14 @@ nav {
     justify-content: space-between;
 }
 
+.nav__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
 .nav__links {
     display: flex;
@@ -95,7 +106,7 @@ nav {
     margin: 0 24px;
     font-size: 14px;
     font-weight: 600;
-    padding-top: 4px;
+    padding: 4px 0px 0px;
     letter-spacing: 0.35px;
     border-bottom: 2px solid transparent;
     position: relative;
