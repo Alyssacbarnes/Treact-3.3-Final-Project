@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* { margin: 0;
+* 
+{ margin: 0;
     padding: 0;
     box-sizing: border-box;
 font-family: 'Inter', system-ui;
@@ -16,22 +17,41 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    font: 16px;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
 a {
     display: inline;
     text-decoration: none;
 }
+
+img {
+    width: 100%;
+}
+
 .purple {
 color: #6415ff;
 }
 
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+
+h1 {
+    color: #1a202c;
+    font-size: 30px;
+    font-weight: 900;
 }
 
-img {
-    width: 100%;
+p {
+color: #243e63;
+font-size: 16px;
 }
 
 .btn {
@@ -54,6 +74,8 @@ img {
         border: none;
     }
 
+
+
 /* NAVBAR */
 
 
@@ -66,15 +88,17 @@ nav {
     display: flex;
     align-items: center;
     margin: 8px 0;
-    padding-bottom: 4px;
+    padding: 0 0 4px;
 }
 
 .nav__logo--title {
     font-weight: 900;
     font-size: 24px;
- margin-left: 12px; 
-    padding-bottom: 2px;
+    margin: 0 0 0 12px; 
+    padding: 12px;
     letter-spacing: 0.6px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .nav__logo--img {
@@ -87,19 +111,13 @@ nav {
     justify-content: space-between;
 }
 
-.nav__container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
 
 .nav__links {
     display: flex;
     align-items: center;
     padding-bottom: 2px;
+    text-align: center;
+    text-wrap: nowrap;
 }
 
 .nav__link {
@@ -128,4 +146,84 @@ nav {
     border: none;
     width: auto;
     transition: all 300ms ease;
+}
+
+
+/* HEADER / ABOUT US */
+
+section {
+    padding: 0 32px;
+}
+
+header .row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header__description {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 40%;
+}
+
+.header__description--para {
+margin: 32px 0;
+}
+
+.header__email {
+width: 100%;
+max-width: 448px;
+height: 68px;
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.header__email--input {
+    background: #ffffff;
+    border: #a0aec0 1px solid;
+    border-radius: 1200px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 0 16px 32px;
+}
+
+.header__email--btn {
+z-index: 2;
+margin: 8px;
+height: calc(100% - 16px);
+border-radius: 500px;
+width: 160px;
+border: none;
+background-color: #6415ff;
+color: #ffffff;
+font-weight: 700;
+font-size: 16px;
+    transition: all 300ms ease;
+}
+.header__email--btn:hover {
+    background-color: rgba(60, 13,153);;
+}
+
+.header__customers--title {
+color: #a0aec0;
+font-size: 14px;
+margin: 48px 0 0;
+opacity: 2.25;
+}
+
+.header__customers {
+margin: 16px 0 0;
+}
+
+.header__img--wrapper {
+width: calc(100% - 40%);
+}
+
+.header__img {
+width: 100%;
+max-width: 768px;
 }
